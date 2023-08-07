@@ -9,5 +9,23 @@ class Svg{
 
     }
 
-    render()
+    render(){
+        return '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="300"'
+    }
+
+    setTextElement(text,color){
+        this.textElement = '<text x="150" y="125" font-size="60" text-anchor="middle"'
+    }
+
+    setShapeElement(shape){
+        this.shapeElement = shape.render()
+    }
 }
+
+const questions = [
+    {
+        
+    }
+
+
+]
