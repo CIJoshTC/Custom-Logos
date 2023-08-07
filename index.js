@@ -58,19 +58,21 @@ inquirer
     svg.setTextElement(text, textColor);
 
     switch (shape) {
-      case 'Triangle':
-        svg.setShapeElement(new Triangle(shapeColor));
-        break;
-      case 'Circle':
-        svg.setShapeElement(new Circle(shapeColor));
-        break;
-      case 'Square':
-        svg.setShapeElement(new Square(shapeColor));
-        break;
-      default:
-        console.error('Invalid shape specified.');
-        process.exit(1);
-    }
+        case 'Triangle':
+          svg.setShapeElement(new Triangle());
+          break;
+        case 'Circle':
+          svg.setShapeElement(new Circle());
+          break;
+        case 'Square':
+          svg.setShapeElement(new Square());
+          break;
+        default:
+          console.error('Invalid shape specified.');
+          process.exit(1);
+      }
+
+   
 
     const logoSVG = svg.render();
 
